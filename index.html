@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Device Checkout</title>
+  </head>
+  <body>
+    <header>
+      <h1>Checkout</h1>
+      <div class="check-out-total">3 ITEMS</div>
+    </header>
+    <div class="container">
+      <section class="top-section">
+        <section class="apple-product-section">
+          <div class="product">
+            <img src="Gold.png" alt="gold-iphone" class="product-img" />
+            <div class="about-product">
+              <div class="specific-product">
+                <div class="item-name">IPhone 12 Pro</div>
+                <p class="item-color">Golden</p>
+              </div>
+              <div class="quantity-amount">x 1</div>
+            </div>
+          </div>
+          <div class="item-price">
+            <div class="exact-amount">$999.00</div>
+            <div class="x-mark">X</div>
+          </div>
+        </section>
+        <section class="apple-product-section">
+          <div class="product">
+            <img src="Blue.png" alt="apple-watch" class="product-img" />
+            <div class="about-product">
+              <div class="specific-product">
+                <div class="item-name">Apple Watch</div>
+                <p class="item-color">blue</p>
+              </div>
+              <div class="quantity-amount">x 1</div>
+            </div>
+          </div>
+          <div class="item-price">
+            <div class="exact-amount">$399.00</div>
+            <div class="x-mark">X</div>
+          </div>
+        </section>
+        <section class="apple-product-section">
+          <div class="product">
+            <img src="iMac=Front 1.png" alt="imac" class="product-img" />
+            <div class="about-product">
+              <div class="specific-product">
+                <div class="item-name">IMac</div>
+                <p class="item-color">Green</p>
+              </div>
+              <div class="quantity-amount">x 1</div>
+            </div>
+          </div>
+          <div class="item-price">
+            <div class="exact-amount">$1199.00</div>
+            <div class="x-mark">X</div>
+          </div>
+        </section>
+        <hr />
+        <form class="coupon-section">
+          <input type="text" placeholder="Enter coupon code" />
+          <button>Apply Coupon</button>
+        </form>
+        <div class="complete-total">
+          <div class="total-description">
+            <div class="sub-total">Sub total</div>
+            <div class="tax">tax</div>
+            <div class="complete-sum">Total</div>
+          </div>
+          <div class="total-cost">
+            <div class="sub-total-num">2597.00</div>
+            <div class="tax-amount">623.28</div>
+            <div class="complete-sum-total">3220.28</div>
+          </div>
+        </div>
+      </section>
+      <form class="form-contact-section">
+        <h1>Contact Information</h1>
+
+        <div class="name-section">
+          <label for="fname">First & Last name</label><br />
+          <input type="text" id="flname" name="flname" /><br />
+        </div>
+        <div class="email-section">
+          <label for="fname">Email Address</label><br />
+          <input type="text" id="email" name="email" /><br />
+        </div>
+        <div class="location-section">
+          <div class="left-side">
+            <label for="country">Country</label><br />
+            <select name="countries" id="countries">
+              <option value="US">United States</option>
+              <option value="germ">Germany</option>
+              <option value="Canada">Canada</option>
+              <option value="Switzerland">Switzerland</option>
+            </select>
+          </div>
+          <div class="right-side">
+            <label for="postal-code">Postal Code</label><br />
+            <input type="text" />
+          </div>
+        </div>
+        <button type="submit">Continue</button>
+      </form>
+    </div>
+  </body>
+</html>
