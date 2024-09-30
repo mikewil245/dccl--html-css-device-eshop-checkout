@@ -186,6 +186,20 @@ select {
   }
 } */
 
+.total-description .complete-total,
+.tax,
+.sub-total-num,
+.tax-amount {
+  color: #6c727f;
+  font-weight: 600;
+}
+
+.total-description .complete-sum,
+.complete-sum-total {
+  color: #1d1d1f;
+  font-weight: 600;
+}
+
 @media screen and (min-width: 1024px) {
   body {
     background: url(background-image@2x.png);
