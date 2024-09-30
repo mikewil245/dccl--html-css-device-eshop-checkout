@@ -18,7 +18,8 @@ header .check-out-total {
 
 .container {
   max-width: 1280px;
-  margin: 0px 50px;
+  /*margin: 0px 50px;*/
+  padding: 50px;
 }
 
 .container .top-section {
@@ -216,7 +217,6 @@ select {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
-    padding: 50px;
   }
 
   .form-contact-section h1 {
