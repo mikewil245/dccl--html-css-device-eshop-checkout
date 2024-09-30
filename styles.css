@@ -179,8 +179,7 @@ select {
 }
 
 .location-section input[type="text"] {
-  flex-grow: 0;
-  flex-shrink: 0;
+  max-width: 200px;
 }
 
 .complete-total {
@@ -229,5 +228,9 @@ select {
 
   .form-contact-section button {
     margin-top: 37px;
+  }
+
+  .location-section input[type="text"] {
+    min-width: 150px;
   }
 }
