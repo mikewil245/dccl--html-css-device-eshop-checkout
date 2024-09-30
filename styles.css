@@ -17,11 +17,13 @@ header .check-out-total {
 }
 
 .container {
-  max-width: 1280px;
-  /*margin: 0px 50px;*/
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  max-width: 1200px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 30px;
+  }
 }
 
 .container .top-section {
@@ -104,7 +106,6 @@ header .check-out-total {
   padding: 8px;
   flex-grow: 1;
   flex-shrink: 1;
-  min-width: 150px;
 }
 
 .coupon-section ::placeholder {
@@ -178,7 +179,8 @@ select {
 }
 
 .location-section input[type="text"] {
-  max-width: 120px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .complete-total {
@@ -186,13 +188,6 @@ select {
   justify-content: space-between;
   align-items: center;
 }
-
-/*@media screen and (max-width: 640px) {
-  .container {
-    margin: 20px 50px;
-    padding: 0;
-  }
-} */
 
 .total-description .complete-total,
 .tax,
@@ -208,7 +203,7 @@ select {
   font-weight: 600;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   body {
     background: url(background-image@2x.png);
     background-size: contain;
@@ -219,6 +214,8 @@ select {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
+
+    /*padding-right: 20px;*/
   }
 
   .form-contact-section h1 {
