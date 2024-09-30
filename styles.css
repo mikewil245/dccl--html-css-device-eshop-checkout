@@ -231,6 +231,6 @@ select {
   }
 
   .location-section input[type="text"] {
-    min-width: 150px;
+    max-width: 150px;
   }
 }
