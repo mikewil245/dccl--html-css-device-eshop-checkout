@@ -91,13 +91,23 @@
 
         <div class="name-section">
           <label for="fname">First & Last name</label><br />
-          <input type="text" id="name" name="flname" />
-          <div class="error-message hidden">Please enter your name</div>
+          <input
+            type="text"
+            id="name"
+            name="flname"
+            placeholder="enter First & Last name"
+          />
+          <div class="error-message hidden">name is required</div>
         </div>
 
         <div class="email-section">
           <label for="email">Email Address</label><br />
-          <input type="text" id="email" name="email" />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter email address"
+          />
           <div class="error-message hidden">Please enter a valid email</div>
         </div>
         <div class="location-section">
@@ -114,7 +124,7 @@
           </div>
           <div class="right-side">
             <label for="postal-code">Postal Code</label><br />
-            <input type="text" id="postal-code" />
+            <input type="text" id="postal-code" placeholder="00270" />
             <div class="error-message hidden">Postal code is required.</div>
           </div>
         </div>
