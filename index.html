@@ -86,30 +86,36 @@
           </div>
         </div>
       </section>
-      <form class="form-contact-section">
+      <form class="form-contact-section" id="forms">
         <h1>Contact Information</h1>
 
         <div class="name-section">
           <label for="fname">First & Last name</label><br />
-          <input type="text" id="flname" name="flname" /><br />
+          <input type="text" id="name" name="flname" />
+          <div class="error-message hidden">Please enter your name</div>
         </div>
+
         <div class="email-section">
-          <label for="fname">Email Address</label><br />
-          <input type="text" id="email" name="email" /><br />
+          <label for="email">Email Address</label><br />
+          <input type="text" id="email" name="email" />
+          <div class="error-message hidden">Please enter a valid email</div>
         </div>
         <div class="location-section">
           <div class="left-side">
             <label for="country">Country</label><br />
             <select name="countries" id="countries">
+              <option selected value>-- select an option --</option>
               <option value="US">United States</option>
               <option value="germ">Germany</option>
               <option value="Canada">Canada</option>
               <option value="Switzerland">Switzerland</option>
             </select>
+            <div class="error-message hidden">Please select a country</div>
           </div>
           <div class="right-side">
             <label for="postal-code">Postal Code</label><br />
-            <input type="text" />
+            <input type="text" id="postal-code" />
+            <div class="error-message hidden">Postal code is required.</div>
           </div>
         </div>
         <button type="submit">Continue</button>

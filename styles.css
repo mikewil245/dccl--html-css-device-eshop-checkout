@@ -18,12 +18,10 @@ header .check-out-total {
 
 .container {
   max-width: 1200px;
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    padding: 30px;
-  }
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 5;
 }
 
 .container .top-section {
@@ -96,12 +94,10 @@ header .check-out-total {
 
 .coupon-section {
   display: flex;
-  /*flex-wrap: wrap;*/
   gap: 0.7rem;
 }
 
 .coupon-section input[type="text"] {
-  border: 1px solid #ccc;
   border-radius: 10px;
   padding: 8px;
   flex-grow: 1;
@@ -109,39 +105,35 @@ header .check-out-total {
 }
 
 .coupon-section ::placeholder {
-  font-style: italic;
   font-size: 1em;
-  color: rgb(36, 210, 36);
+  font-weight: 600;
+  color: #a8a8a8;
   padding: 0.3rem;
 }
 
 .coupon-section button {
-  display: block;
   border: none;
   background-color: black;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: white;
-  padding: 8px 12px;
+  padding: 0.9rem;
   border-radius: 10px;
   flex-grow: 0;
 }
 
 .form-contact-section {
-  background-color: white;
+  background-color: rgb(241, 235, 235);
   font-size: 0.8rem;
   padding: 1.8rem 2rem;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .form-contact-section > div,
 h1 {
-  margin-bottom: 1rem;
-}
-
-.form-contact-section label {
-  color: #6c727f;
+  margin-bottom: 1.5rem;
 }
 
 .form-contact-section h1 {
@@ -149,11 +141,15 @@ h1 {
   color: #1d1d1f;
 }
 
+.form-contact-section label {
+  color: #6c727f;
+}
+
 .form-contact-section input[type="text"],
 select {
-  border: 1px solid #ccc;
   border-radius: 7.5px;
   padding: 11.5px;
+  background-color: #f3f4f6;
 }
 
 .form-contact-section button {
@@ -162,7 +158,6 @@ select {
   padding: 0.9rem;
   border: none;
   border-radius: 10px;
-  margin-top: 0.9rem;
 }
 
 .email-section,
@@ -178,8 +173,9 @@ select {
   gap: 1rem;
 }
 
-.location-section input[type="text"] {
-  max-width: 200px;
+.location-section input[type="text"],
+select {
+  width: 100%;
 }
 
 .complete-total {
@@ -212,9 +208,6 @@ select {
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
-
-    /*padding-right: 20px;*/
   }
 
   .form-contact-section h1 {
@@ -233,4 +226,20 @@ select {
   .location-section input[type="text"] {
     max-width: 150px;
   }
+}
+
+/* Dynamic */
+.error-message {
+  color: red;
+  position: relative;
+  top: 12%;
+  left: 2%;
+}
+
+.hidden {
+  display: none;
+}
+
+.borderr {
+  border: 2px solid red;
 }
