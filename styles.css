@@ -17,9 +17,9 @@ header .custom {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px;
 }
 
 .container .top-section {
@@ -93,6 +93,7 @@ header .custom {
 .coupon-section {
   display: flex;
   gap: 0.7rem;
+  flex-wrap: wrap;
 }
 
 .coupon-section input[type="text"] {
@@ -120,7 +121,7 @@ header .custom {
 }
 
 .form-contact-section {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   font-size: 0.8rem;
   padding: 1.8rem 2rem;
   border-radius: 0px 0px 10px 10px;
@@ -201,6 +202,7 @@ select {
     background: url(background-image@2x.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: #f3f4f6;
   }
 
   .container {
